@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//  // // Answer 1
+// Declare and initialize a 2D array (3x3)
+var array2D = [[0, 0, 0],[0, 0, 0],[0, 0, 0]];
+
+// // Answer 2
+// Declare and initialize a 3x3 matrix
+var matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+// // Answer 3
+// Printing counting from 1 to 10 using for loop
+document.write("<b>Numeric Counting from 1 to 10</b><br>")
+for(var i = 1; i <= 10; i++){
+    document.write(i,"<br>");
+}
+
+document.write("<br>")
+
+// // Answer 4
+// Taking input from user about which table they want
+let tables = parseInt(prompt("Enter number of table you want to print"))
+
+// Taking input from user about lenght of table
+let lenght = parseInt(prompt("Enter lenght you want"))
+
+// Print multiplication table using a for loop
+document.write("<b> Multiplication table </b> <br> ")
+for(var i = 1; i <= lenght; i++){
+    document.write(`${tables} x ${i} = ${tables*i}`,"<br>");
+}
+
+document.write("<br>")
+
+// // Answer 5
+document.write("<b>Fruits:</b><br>")
+let fruits = ["Apple", "Banana", "Mango", "Orange","Strawberry"]
+for (let i = 0; i < fruits.length; i++) {
+    document.write(fruits[i],"<br>");
+}
+document.write("<br>")
+let fruit = ["Apple", "Banana", "Mango", "Orange","Strawberry"]
+for (let i = 0; i < fruit.length; i++) {
+    document.write("Element at index " + `${i}` + " is " + `${fruit[i]}`,"<br>")
+}
+
+document.write("<br>")
+
+// // // Answer 6
+
+// // Part a:
+document.write("<b>Counting:</b> <br>")
+for(var i = 1; i <= 15; i++){
+    document.write(i,"<br>");
+} 
+
+// // Part b:
+document.write("<b>Reverse Counting:</b> <br>")
+for(var i = 10; i >= 1; i--){
+    document.write(i,"<br>");
+} 
+
+// // Part c:
+document.write("<b>Even Number:</b> <br>")
+for(var i = 0; i <= 20; i++){
+    if (i  % 2 === 0) {
+        document.write(i,"<br>")
+    }
+}
+
+// // Part d:
+document.write("<b>Odd Number:</b> <br>")
+for(var i = 1; i <= 20; i++){
+    if (i  % 2 === 1) {
+        document.write(i,"<br>")
+    }
+}
+
+// // Part e:
+document.write("<b>Series:</b> <br>")
+for(var i = 1; i <= 20; i++){
+    if (i  % 2 === 0) {
+        document.write(i,"k","<br>")
+    }
+}
+
+document.write("<br>")
+
+// // // Answer 7
+// Define the array
+const A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// Prompt the user to enter the item to search for
+const userInput = prompt("Enter an item to search for:");
+
+// // Initialize a variable to track if the item is found
+// let found = true;
+
+// Iterate through the array to search for the user input
+for (let i = 0; i < A.length; i++) {
+    if (userInput.toLowerCase() === A[i].toLowerCase()) {
+        found = true;
+        break;
+    }
+}
+
+// Display the result based on whether the item is found or not
+if (found) {
+    document.write(`<b>${userInput} is found in the list.</b>`);
+} else {
+    document.write(`<b>${userInput} is not found in the list.</b>`);
+}
+
+document.write("<br>")
+document.write("<br>")
+
+// // // Answer 8
+// Define an array
+const number = [24,53,78,91,12]; // Change this array as needed
+
+// Initialize the largest number variable with the first element of the array
+let largest = number[0];
+
+// Iterate through the array to find the largest number
+for (let i = 1; i < number.length; i++) {
+    if (number[i] > largest) {
+        largest = number[i];
+    }
+}
+
+// Print the largest number
+document.write("<b>The largest number in the array is:</b>",  largest ,"<br>");
+
+document.write("<br>")
+
+// // // Answer 9
+// Define an array
+const numbers = [24,53,78,91,12]; 
+
+// Initialize the smallest number variable with the first element of the array
+let smallest = numbers[0];
+
+// Iterate through the array to find the smallest number
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < smallest) {
+        smallest = numbers[i];
+    }
+}
+
+// Print the smallest number
+document.write("<b>The smallest number in the array is:</b>", smallest,"<br>");
+
+document.write("<br>")
+
+// // Answer 10
+// Multiples of 5 ranging 1 to 100
+document.write("<b>Multiples of 5 ranging 1 to 100</b>")
+let table = 5
+for(var i = 1; i <= 20; i++){
+    document.write(`<br> ${table*i}`);
+}
+    </script>
+</body>
+</html>
